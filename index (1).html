@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centered Buttons</title>
+    <style>
+        .button-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .button {
+            background-color: blue;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px 0;
+            text-decoration: none; /* Remove underline from link */
+            display: inline-block; /* Needed to make the padding and background color work correctly */
+            text-align: center; /* Center the text within the button */
+        }
+
+        .button-red {
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+    <div class="button-container">
+        <a href="https://example.com" class="button">Button 1</a>
+        <a href="https://example.com" class="button">Button 2</a>
+        <a href="https://example.com" class="button button-red">Button 3</a>
+        <button class="button" onclick="goBack()">Back</button>
+    </div>
+
+    <script>
+        function goBack() {
+            window.history.back();
+        }
+    </script>
+</body>
+</html>
